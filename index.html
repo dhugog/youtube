@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>YouTube</title>
+		<script src="js/functions.js"></script>
+		<link rel="icon" href="imgs/favicon.png"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/util.css" />
+	</head>
+	<body>
+		<header>
+			<div id="header-c1">
+				<div id="btn-toggle-menu" class="noselect" onClick="toggleMenu()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<a id="logo" href="index.html" class="noselect"></a>
+				<form>
+					<input id="input-pesquisa" placeholder="Pesquisar"/>
+					<input type="button" id="btn-pesquisa" class="noselect"/>
+				</form>
+				<div id="perfil">
+					<span id="showbox">Enviar</span>
+					<img src="imgs/upload.png" id="btn-upload" class="noselect" onMouseOver="document.getElementById('showbox').style.display='block'" onMouseOut="document.getElementById('showbox').style.display='none'"></img>
+					<img src="imgs/perfil.png" id="icon-perfil" class="noselect"></img>
+				</div>
+			</div>
+			<nav id="nav-bar">
+				<ul>
+					<li><a href="index.html" class="link-menu active noselect" onClick="navbar_active(0)">Início</a></li>
+					<li><a href="#" 		 class="link-menu inactive noselect" onClick="navbar_active(1)">Em alta</a></li>
+					<li><a href="#" 		 class="link-menu inactive noselect" onClick="navbar_active(2)">Inscrições</a></li>
+				</ul>
+			</nav>
+		</header>
+		<nav id="nav-menu">
+			<ul id="main">
+				<li>Início</li>
+				<li>Meu canal</li>
+				<li>Em alta</li>
+				<li>Inscrições</li>
+				<li>Histórico</li>
+				<li>Assistir mais tarde</li>
+			</ul>
+		</nav>
+		<section id="mainSection">
+
+		</section>
+	</body>
+</html>

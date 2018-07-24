@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+header {
+	position: fixed;
+	top: 0;
+	background-color: #FFF;
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	box-sizing: border-box;
+}
+
+header #header-c1 {
+	width: 100%;
+	height: 100%;
+	padding: 0 3% 0 3%;
+	border-bottom: 1px solid #E8E8E8;
+	box-sizing: border-box;
+}
+
+header #logo {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 100px;
+	background-image: url("../imgs/logo.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+}
+
+
+header form {
+	display: inline-block;
+	width: 56%;
+	height: 60%;
+	margin-left: 100px;
+	vertical-align: middle;
+}
+
+header form #input-pesquisa {
+	float: left;
+	font-size: 14pt;
+	width: 90%;
+	height: 100%;
+	border: 1px solid #CBCBCB;
+	padding: 10px 5px;
+	box-sizing: border-box;
+}
+
+header form #btn-pesquisa {
+	float: right;
+	height: 100%;
+	width: 10%;
+	border: 1px solid #D3D3D3;
+	border-left: none;
+	border-radius: 0 2px 2px 0;
+	background-color: #F8F8F8;
+	background-image: url(../imgs/lupa.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 15px;
+}
+
+header form #btn-pesquisa:hover {
+	cursor: pointer;
+	background-color: #F0F0F0;
+	border-color: #C6C6C6;
+}
+
+header form #btn-pesquisa:active {
+	background-color: #E9E9E9;
+}
+
+header #perfil {
+	float: right;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+header #perfil #btn-upload {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 18px;
+	margin-right: 25px;
+}
+
+header #perfil #btn-upload:hover {
+	cursor: pointer;
+}
+
+#showbox {
+	display: none;
+	float: left;
+	margin-top: 10px;
+	margin-right: 5px;
+	line-height: 10px;
+	background-color: #333;
+	padding: 7px;
+	color: white;
+	border-radius: 2px;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.5);
+}
+
+header #perfil #icon-perfil {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+}
+
+/* Barra navegação */
+
+header #nav-bar {
+	background-color: #FFF;
+	position: relative;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+header #nav-bar ul {
+	list-style: none;
+	text-align: center;
+}
+
+header #nav-bar ul li {
+	display: inline-block;
+	margin: 0px 16px;
+}
+
+header #nav-bar ul li a {
+	font-size: 10.5pt;
+	color: #666;
+	text-decoration: none;
+	width: 100%;
+	padding: 11px 0;
+	box-sizing: border-box;
+}
+
+header #nav-bar ul li:hover a {
+	border-bottom: 3px solid #CC181E;
+}
+
+header #nav-bar ul li a.active {
+	font-weight: 500;
+	color: #333;
+	border-bottom: 3px solid #CC181E;
+}
+
+/* Menu */
+
+header #btn-toggle-menu {
+	display: inline-block;
+	top: 0;
+	float: left;
+	display: flex;
+	width: 15px;
+	height: 100%;
+	padding: 19px 0px;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+header #btn-toggle-menu div {
+	float: left;
+	width: 100%;
+	height: 2.3px;
+	border-radius: 1px;
+	margin: 0 auto;
+	background-color: #B8B8B8;
+}
+
+header #btn-toggle-menu:hover {
+	cursor: pointer;
+}
+
+header #btn-toggle-menu:hover div {
+	background-color: #666;
+}
+
+#nav-menu {
+	position: fixed;
+	width: 253px;
+	height: 100%;
+	top: 55px;
+	left: -100%;
+	background-color: white;
+	float: left;
+	padding: 14px 24px;
+	box-shadow: 11px 5px 20px rgba(0,0,0,.1);
+	box-sizing: border-box;
+}
+
+#nav-menu ul#main {
+	list-style: none;
+}
+
+#nav-menu ul#main li {
+	color: #444;
+	font-weight: 400;
+	vertical-align: middle;
+	padding: 6.5px 13px;
+	font-size: 14px;
+}
+
+#nav-menu ul#main li:hover {
+	cursor: pointer;
+	background-color: #444;
+	color: white;
+}
+
+#nav-menu ul#main li:first-child, header #nav-menu ul#main li:first-child:hover {
+	background-color: #cc181e;
+	color: white;
+	font-weight: 500;
+}
+
+#nav-menu ul#main li:first-child::before {
+	content: url("../imgs/home.png");
+	margin-right: 13px;
+}
+
+
